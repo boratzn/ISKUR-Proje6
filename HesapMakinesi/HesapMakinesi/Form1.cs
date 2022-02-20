@@ -76,7 +76,6 @@ namespace HesapMakinesi
 
         private void islemYap(string islemTipi)
         {
-            if (string.IsNullOrEmpty(islemTipi)) islemTipi = "+";
             try
             {
                 sayi1 = int.Parse(tbEkran.Text);
@@ -200,7 +199,6 @@ namespace HesapMakinesi
         private void buttonEsit_Click(object sender, EventArgs e)
         {
             islemYap(islemTipi);
-            //tbEkran.Text = sonuc.ToString();
         }
     }
 }
